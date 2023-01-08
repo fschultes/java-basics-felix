@@ -60,25 +60,29 @@ public class App {
 
     // Exersice Switch
     private static void coloringNumber () {
-        Scanner in = new Scanner(System.in);
-        System.out.println("gib eine Zahl zwischen 1-4 ein und ich sage dir ihre Farbe:");
-        int input = Integer.parseInt(in.nextLine());
-        switch (input) {
-            case 1:
-            System.out.println("Black");
-            break;
-            case 2:
-            System.out.println("White");
-            break;
-            case 3:
-            System.out.println("Red");
-            break;
-            case 4:
-            System.out.println("Green");
-            break;
-            default:
-            System.out.println("Your number has to be between 1-4");
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.println("gib eine Zahl zwischen 1-4 ein und ich sage dir ihre Farbe:");
+            int input = Integer.parseInt(in.nextLine());
+            switch (input) {
+                case 1:
+                System.out.println("Black");
+                break;
+                case 2:
+                System.out.println("White");
+                break;
+                case 3:
+                System.out.println("Red");
+                break;
+                case 4:
+                System.out.println("Green");
+                break;
+                default:
+                System.out.println("Your number has to be between 1-4");
 
+            }
+        } catch (NumberFormatException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }  
     }
     // Exercise FizzBuzz
