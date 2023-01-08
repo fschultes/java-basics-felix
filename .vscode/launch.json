@@ -9,6 +9,20 @@
             "name": "Launch App",
             "request": "launch",
             "mainClass": "com.bt.java.basics.App",
+            "projectName": "java-basics-felix_8b43f357"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "com.bt.java.basics.App",
+            "projectName": "java-basics-felix_b6965f8a"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "com.bt.java.basics.App",
             "projectName": "java-basics_6b8c15e2"
         },
         {
