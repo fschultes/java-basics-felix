@@ -4,7 +4,7 @@ import java.util.Scanner; // Import the Scanner class
 
 public class App1 {
 
-    private static void WhileLoopExercise() {
+    private void whileLoopExercise() {
         try (Scanner in = new Scanner(System.in)) {
             System.out.println("gib eine beliebige Zahl zwischen 0 und 10 ein:");
             int input = Integer.parseInt(in.nextLine());
@@ -16,14 +16,13 @@ public class App1 {
         }System.out.println("done");
     }
 
-    private static void SumOfNumbers() {
+    private void sumOfNumbers() {
         try (Scanner in = new Scanner(System.in)) {
             System.out.println("gib eine beliebige Zahl zwischen 0 und 10 ein:");
             int input = in.nextInt();
-            int i = 1;
             int sum = 0;
             System.out.print(0);
-            for (i = 1; i <= input; i++) {
+            for (int i = 1; i <= input; i++) {
                 System.out.print(" + " + i + " ");
                 sum = sum + i;
             }
@@ -31,7 +30,7 @@ public class App1 {
         }
     }
 
-    private static void SumOfNumbetween() {
+    private void sumOfNumbetween() {
         try (Scanner in1 = new Scanner(System.in);Scanner in2 = new Scanner(System.in)) {
             
             System.out.println("gib zuerst eine kleine und dann eine größere Zahl ein:");
@@ -41,7 +40,7 @@ public class App1 {
             int sum = 0;
             for (i = input1; i <= input2; i++) {
                 System.out.print(" + " + i + " ");
-                sum = sum + i;
+                sum += i;
             }
             System.out.println("= " + sum);
         }
@@ -49,11 +48,12 @@ public class App1 {
 
     public static void main(String[] args) throws Exception {
 
-        // WhileLoopExercise();
+        App1 app1 = new App1();
+        // app1.whileLoopExercise();
 
-        SumOfNumbers();
+        // app1.sumOfNumbers();
 
-        // SumOfNumbetween();
+        app1.sumOfNumbetween();
 
     }
 }
